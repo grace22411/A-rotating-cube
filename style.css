@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  background-color: #045B7E;
+  font-family: "Recursive", sans-serif;
+}
+
+.stage {
+  margin: 150px auto;
+}
+
+p {
+  text-align: center;
+}
+p a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#rotating div {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  color: #045B7E;
+  border: 2px solid #ccc;
+  background: rgba(243, 245, 202, 0.9);
+  box-shadow: inset 0 0px 20px rgba(4, 91, 126, 0.7);
+  text-align: center;
+  line-height: 120px;
+  font-size: 40px;
+}
+
+#rotating {
+  -webkit-animation-name: rotatecube;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 12s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: 60px 60px 0;
+}
+#rotating .face1 {
+  -webkit-transform: translateZ(60px);
+}
+#rotating .face2 {
+  -webkit-transform: rotateY(90deg) translateZ(60px);
+}
+#rotating .face3 {
+  -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+  background-color: #F3F5CA !important;
+}
+#rotating .face4 {
+  -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+}
+#rotating .face5 {
+  -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+}
+#rotating .face6 {
+  -webkit-transform: rotateX(-90deg) translateZ(60px);
+}
+
+@-webkit-keyframes rotatecube {
+  from, to {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    -webkit-transform: rotateY(-90deg);
+  }
+  33% {
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    -webkit-transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    -webkit-transform: rotateY(90deg) rotateX(90deg);
+  }
+  83% {
+    -webkit-transform: rotateX(90deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
