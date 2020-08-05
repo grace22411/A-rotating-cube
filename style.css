@@ -39,13 +39,14 @@ p a {
 }
 #rotating .face1 {
   -webkit-transform: translateZ(60px);
+  box-shadow: 0 20px 0px rgba(4, 91, 126, 0.9) !important;
 }
 #rotating .face2 {
   -webkit-transform: rotateY(90deg) translateZ(60px);
 }
 #rotating .face3 {
   -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
-  background-color: #F3F5CA !important;
+  box-shadow: 0 20px 0px rgba(4, 91, 126, 0.9) !important;
 }
 #rotating .face4 {
   -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);

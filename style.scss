@@ -40,13 +40,14 @@ p{
       -webkit-transform-origin: 60px 60px 0;
       .face1{
         -webkit-transform: translateZ(60px);
+        box-shadow:0 20px 0px rgba(#045B7E,0.9) !important;
       }
       .face2{
         -webkit-transform: rotateY(90deg) translateZ(60px);
       }
       .face3{
         -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
-        background-color: #F3F5CA !important;
+        box-shadow:0 20px 0px rgba(#045B7E,0.9) !important;
       }
       .face4{
         -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
