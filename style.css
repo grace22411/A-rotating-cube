@@ -39,20 +39,21 @@ p a {
 }
 #rotating .face1 {
   transform: translateZ(60px);
-  box-shadow: 0 20px 0px rgba(4, 91, 126, 0.9) !important;
+  box-shadow: 0 20px 0px rgba(255, 255, 255, 0.9) !important;
 }
 #rotating .face2 {
   transform: rotateY(90deg) translateZ(60px);
 }
 #rotating .face3 {
   transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
-  box-shadow: 0 20px 0px rgba(4, 91, 126, 0.9) !important;
+  box-shadow: 0 20px 0px rgba(255, 255, 255, 0.9) !important;
 }
 #rotating .face4 {
   transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
 }
 #rotating .face5 {
   transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+  box-shadow: 0 20px 0px rgba(255, 255, 255, 0.9) !important;
 }
 #rotating .face6 {
   transform: rotateX(-90deg) translateZ(60px);
